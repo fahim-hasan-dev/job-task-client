@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
             {
                 path:'/updateTask/:id',
                 element:<UpdateTask/>,
-                loader:({params})=>fetch(`http://localhost:5000/tasks/${params.id}`,{credentials:'include'})
+                loader:({params})=>fetch(`https://job-task-server-eight.vercel.app/tasks/${params.id}`,{credentials:'include'})
             },
           
         ]
